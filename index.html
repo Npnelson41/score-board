@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>leader-board</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="main">
+    <div class="home">
+      <h1 class="home-score bebas-neue-regular">HOME</h1>
+      <div class="score-board" id="home-points"></div>
+      <button class="perso-buttons" onclick="add1Home()">+1</button>
+      <button class="perso-buttons" onclick="add2Home()">+2</button>
+      <button class="perso-buttons" onclick="add3Home()">+3</button>
+    </div>
+    <div>
+      <button class="new-game-btn" onclick="reset()">NEW GAME</button>
+    </div>
+    <div class="guest">
+      <h1 class="guest-score bebas-neue-regular">GUEST</h1>
+      <div class="score-board" id="guest-points"></div>
+      <button class="perso-buttons" onclick="add1Guest()">+1</button>
+      <button class="perso-buttons" onclick="add2Guest()">+2</button>
+      <button class="perso-buttons" onclick="add3Guest()">+3</button>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
